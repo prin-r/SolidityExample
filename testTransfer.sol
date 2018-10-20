@@ -25,4 +25,8 @@ contract TestTransfer {
         txList[msg.sender] = 0;
     }
     
+    function increaseMoney() public {
+        wallet[msg.sender] = wallet[msg.sender] + 100;
+    }
+    
 }
