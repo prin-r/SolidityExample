@@ -26,7 +26,7 @@ contract TestTransfer {
     }
     
     function increaseMoney() public {
-        wallet[msg.sender] = wallet[msg.sender] + 100;
+        wallet[msg.sender] = wallet[msg.sender].add32(uint32(100));
     }
     
     function getWalletStatus() public view returns(uint) {
