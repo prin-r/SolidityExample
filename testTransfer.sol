@@ -29,4 +29,8 @@ contract TestTransfer {
         wallet[msg.sender] = wallet[msg.sender] + 100;
     }
     
+    function getWalletStatus() public view returns(uint) {
+        return wallet[msg.sender];
+    }
+    
 }
